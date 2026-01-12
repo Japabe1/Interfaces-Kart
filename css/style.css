@@ -1,0 +1,102 @@
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #ff9800;
+}
+
+header,
+footer {
+    background-color: #013c7f;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+body {
+    background: linear-gradient(135deg, #0066cc, #ff9800);
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: 2px solid #0066cc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+
+h1 {
+    animation-name: moverYcambiar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes moverYcambiar {
+    from {
+        color: var(--primary-color);
+        transform: translateX(0px) scale(1);
+
+    }
+
+    to {
+        color: var(--secondary-color);
+        transform: translateX(80px) scale(1.2);
+    }
+}
+
+
+.imagen1 {
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagen1:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+
+.text-warning {
+    color: #ff9800 !important;
+}
+
+.bg-warning {
+    background-color: #ff9800 !important;
+}
+
+.border-warning {
+    border-color: #ff9800 !important;
+}
+
+.btn-warning {
+    background-color: #ff9800 !important;
+    border-color: #ff9800 !important;
+    color: #fff !important;
+}
+
+.btn-warning:hover {
+    background-color: #e68900 !important;
+    border-color: #e68900 !important;
+}
+
+
+.video-player {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
